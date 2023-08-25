@@ -7,8 +7,9 @@
 ## _Pseudocodigo:_
 
 > Algoritmo conversion_de_unidades
-    definir cm,m,yd,v,pulg,p Como Real
-    Definir op Como Entero
+> 
+    >definir cm,m,yd,v,pulg,p Como Real 
+    >Definir op Como Entero
     Escribir "Seleccione a que unidad desea comvertir los centimetros,"
     Escribir "   1: Metros"
     Escribir "   2: Yardas"
@@ -50,72 +51,95 @@ FinAlgoritmo
 
 
 
-## C++
+## C++:
+     
+     //programa que convierte cm en metros, yardas, varas, pulgadas y pies.
+     #include <iostream>
 
-> //programa que convierte cm en metros, yardas, varas, pulgadas y pies.
-#include <iostream>
-using namespace std;
-int main()
-{
-float cm,m,yd,v,pulg,p;
-int op;
-cout << "Seleccione a que unidad desea comvertir los centimetros,"<<endl<<" 1. Metros "
-" 2. Yardas "
-" 3. Varas "
-" 4. Pulgadas "
-" 5. Pies ";
-    cin>>op;
+       using namespace std;
+
+     int main()
+     {
+    float cm,m,yd,v,pulg,p;
+    int op;
+    cout << "Seleccione a que unidad desea comvertir los centimetros,"<<endl<<" 1. Metros "
+    " 2. Yardas "
+    " 3. Varas "
+     " 4. Pulgadas "
+     
+     " 5. Pies ";
+     
+     cin>>op;
+    
+    
     cin>>cm;
+    
     if (op == 1 ) {
         m = cm/100;
         cout << cm << " en metros son: "<<  m;
           }
+          
           else if (op == 2) {
             yd = cm/91.44;
             cout << cm <<" en yardas son: "<< yd;
             }
+            
             else if (op == 3){
                 v = cm/83.58;
                 cout << cm << " centimetros en vara son: "<<v;
+                
             }
             else if (op == 4 ){
                 pulg = cm/2.54;
                 cout << cm << " centimetros en pulgadas son: "<< pulg;
+                
             }
             else if (op == 5 ){
                 p =cm/30.48;
                 cout << cm << " centimetros en pies son: "<<p;
+
             }
             else if (op >= 6){
                 cout << "uupss esta opcion no existe, por favor eliga una del 1-5";
             }
+
     return 0;
-}
+    }
 
 ## Python
-> #programa que convierte cm en metros, yardas, varas, pulgadas y pies.
-print("1. metros 2. Yardas "
-" 3. Varas "
-" 4. Pulgadas "
-" 5. Pies ")
-op = int(input("seleccine la del 1-5 la opcion que quiere. "))
-cm = float(input("Igrese el centimetro  que quiere convertir  "))
-if op == 1:
+     #programa que convierte cm en metros, yardas, varas, pulgadas y pies.
+     print("1. metros 2. Yardas "
+     " 3. Varas "
+     " 4. Pulgadas "
+     " 5. Pies ")
+     op = int(input("seleccine la del 1-5 la opcion que quiere. "))
+
+
+     cm = float(input("Igrese el centimetro  que quiere convertir  "))
+
+    if op == 1:
+
     m = cm/100
     print(f" {cm} centimetros en metros son: {m} ")
-elif op == 2:
+    elif op == 2:
+
          yd = cm/91.44
          print(f"{cm} centimetros en yardas son: {yd}")
-elif op == 3:
+    elif op == 3:
+
     v = cm/83.58
     print(f"{cm }centimetros en varas son : {v}")
-elif op == 4:
+    
+    elif op == 4:
+
     pulg = cm/2.54
     print(f"{cm} centimetros en pulgadas son: {pulg}")
-elif op == 5:
+    elif op == 5:
+
      p =cm/30.48
      print(f"{cm} centimetros en pies son: {p}")
-else:
+    else:
+
     print("epaa esta opcion no existe porfavor eliga una del 1-5, gracias")
 
 
