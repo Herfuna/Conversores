@@ -4,7 +4,7 @@
 
 [![N|Solid](https://www.universidadesonline.com.gt/logos/thumb/logo-universidad-mariano-galvez-de-guatemala.png)](https://umg.edu.gt/miumg/)
 ## Conversiones de unidades de longitud
-## _Pseudocodigo:_
+## _Pseudocodigo 1:_
 
 > Algoritmo conversion_de_unidades
 > 
